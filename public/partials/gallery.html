@@ -1,0 +1,37 @@
+    <div ng-controller="galleryController as gallery">
+        
+                
+        <div class="row">
+        
+        <div class="columns large-2 medium-4 small-12" ng-repeat="movie in myFile">
+            <img ng-src="./data/images/{{movie.imdbID}}.jpg">
+        </div>
+        </div>
+<!--
+
+         <li ng-repeat = "movie in myFile">
+            {{movie.title}}
+             Rank:{{movie.rank}}
+        </li>
+-->
+        
+        
+        
+<!--
+        {{myName}}
+        <ul>
+            <li ng-repeat="name in classdata.names">
+                    {{name}}
+            </li>
+        </ul>
+-->
+    
+        
+<!--        <input type="text" class="form-control" ng-model="main.searchInput">-->
+        
+<!--        <div>{{file.name}}</div>-->
+        
+        
+       
+        
+    </div>

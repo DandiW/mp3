@@ -1,0 +1,17 @@
+ <div ng-controller="detailController as detail">
+     
+     
+    
+         <ul class ="row" ng-repeat = "movie in myFile| filter:inputValue">
+             <div class ="small-6 medium-2 column">
+                <img ng-src="./data/images/{{movie.imdbID}}.jpg">
+             </div>
+             <div class ="small-6 medium-10 column">
+                    <span>{{movie.title}}</span>
+                    <span>Rank:{{movie.rank}}</span>
+             </div>
+          
+        </ul>
+</div>
+     
+     
