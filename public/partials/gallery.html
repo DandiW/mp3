@@ -1,12 +1,37 @@
     <div ng-controller="galleryController as gallery">
         
-                
-        <div class="row">
         
-        <div class="columns large-2 medium-4 small-12" ng-repeat="movie in myFile">
-            <img ng-src="./data/images/{{movie.imdbID}}.jpg">
+                
+        <div class="row tag">
+        
+<!--            <div class ="columns small-12 medium-4">-->
+            <button class="warning button" href="#" ng-click="myGenre('')">All</button>
+            <button class="warning button" href="#" ng-click="myGenre('action')">Action</button>
+            <button class="warning button" href="#" ng-click="myGenre('Adventure')">Adventure</button>
+            <button class="warning button" href="#" ng-click="myGenre('crime')">Crime</button>
+            <button class="warning button" href="#" ng-click="myGenre('comedy')">Comedy</button>
+            <button class="warning button" href="#" ng-click="myGenre('musical')">Musical</button>
+            <button class="warning button" href="#" ng-click="myGenre('mystery')">Mystery</button>
+            <button class="warning button" href="#" ng-click="myGenre('romance')">Romance</button>
+            <button class="warning button" href="#" ng-click="myGenre('Sci-Fi')">Sci-Fi</button>
+            <button class="warning button" href="#" ng-click="myGenre('thriller')">Thriller</button>
+            <button class="warning button" href="#" ng-click="myGenre('western')">Western</button>
+            
+<!--           </div>-->
+        </div>
+            
+<!-- -------------------- photo  -------------------->
+        <div class="row" id="photo-container">
+        <div class="columns large-2 medium-4 small-12 formatgallary" ng-repeat="movie in myFile | filter : myGenreby">
+            
+        <div class="photo" >   
+            <a href="#details/{{movie.rank}}"> <img ng-src="./data/images/{{movie.imdbID}}.jpg" class="thumbnail" ></a>
+        </div>
+            
         </div>
         </div>
+<!-- ----------------------------           -->
+        
 <!--
 
          <li ng-repeat = "movie in myFile">

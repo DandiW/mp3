@@ -10,8 +10,8 @@ app.config(function ($routeProvider) {
 			templateUrl: 'partials/list.html',
 			controller: 'listController'
 		})
-        .when('/detail/:rank', {
-                templateUrl: 'partials/detail.html',
+        .when('/details/:rank', {
+                templateUrl: 'partials/details.html',
                 controller: 'detailController'
             })
 		.otherwise({

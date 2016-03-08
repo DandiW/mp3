@@ -1,17 +1,94 @@
 // Add any custom Sass & CSS here
-.title{
+#title{
     text-align: center;
+    font-size:50px;
+    margin: 50px 0px 20px 0px;
+    font-family: $font1;
 }
 
-.subtitle{
-    text-align: center;
+.subtitle-holder{
+     text-align: center;
+    .subtitle{
+     text-align: center;
+     padding: 30px 30px 30px 30px;
 }
 
-.search-holer{
+}
+
+
+.search-holder{
+
+    ul {
     
-    text-align: center;
+    //padding: 20px 20px 20px 20px;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    //padding: 20px 20px 20px 20px;
+    background: $lightgrey;
+    
+    }
+    .searchbox{
+    background-color: $darkgrey;
+    padding: 30px 20px 20px 20px;
+    
+    }
+    
+    a {
+        color:black;
+        font-size: 10px;
+        
+    }
+    .moviename{
+            font-size:20px;
+            font-weight: 700;
+            color: #545454;
+        }
 }
+
+
+ .eachmovie{
+    background: pink;
+    padding: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #545454;
+    border-bottom: 0px;
+    font-family: $font2;
+}
+
 
 span{
     display: block;
+}
+
+.photo{
+    display: block;
+    height: 300px;
+    text-align: left;
+    float:left;
+    
+}
+
+.tag{
+    text-align: center;
+    
+}
+#photo-container {
+    .formatgallary{
+        float: left;
+    }
+}
+
+.detial-container{
+    font-family: $font1;
+    background-color: $darkgrey; 
+    padding: 50px 20px 50px 20px;
+    .detail-title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.inputvalue{
+    padding: 5px 5px 5px 5px;
+    
 }
